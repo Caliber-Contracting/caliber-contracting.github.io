@@ -1,0 +1,58 @@
+---
+layout: default
+title: Services
+section_id: services
+services_left:
+  - icon: trophy
+    title: Web Development
+    desc: Beautiful and useful websites using responsive design.
+  - icon: cogs
+    title: iOS/Android Applications
+    desc: Our developers have a total of 4 iOS applications on the App Store and Google Play. We use Objective-C and Swift to make apps that are useful and fun.
+  - icon: compass
+    title: Branding
+    desc: Looking to establish or improve your online presence? We'll work with you to develop a strong and recognizable brand to help improve your company's business.
+  - icon: image
+    title: Graphic Design
+    desc: Adobe Creative Suite is our bread and butter. We can make advertisements and illustrations to suit your needs.
+---
+
+<div class='full parallax' style='background-image: url(images/@stock/service-page-header.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Our services" tagline="Get to know what we do" color="#fff" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+
+<div class='full'>
+  <div class='row'>
+    <div class='medium-6 columns'>
+      {% for service in page.services_left %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='fa fa-{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class='medium-6 columns'>
+      {% for service in page.services_right %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='fa fa-{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>

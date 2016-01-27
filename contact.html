@@ -1,0 +1,55 @@
+---
+layout: default
+title: Contact
+section_id: contact
+---
+
+<div class='full parallax' style='background-image: url(images/@stock/contact-header-bg.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Contact Us" tagline="Drop by or send us an email" color="#fff" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+  <div class='full'>
+    <div class='row'>
+      <div class='medium-8 columns'>
+        <div class='form'>
+          <div class='row'>
+              <form id-'contact-form' action="//formspree.io/evan.t.nichols@gmail.com" method="POST">
+                <div class='large-12 columns'>
+                <p id='thanks' style='display: none;'>
+                  Thanks for contacting us, we'll be in touch soon!
+                </p>
+              </div>
+              <div class='medium-12 columns'>
+                  <input type="hidden" name="_cc" value="grant.isom@gmail.com">
+                <input class='required' name='name' placeholder='NAME' type='text'>
+                <input class='required email' name='email' placeholder='EMAIL' type='text'>
+                <input class='required' name='phone' placeholder='PHONE' type='text'>
+                <input class='required' name='project_type' placeholder='PROJECT TYPE (web, iOS, Android, etc)' type='text'>
+                <textarea class='required' name='description' placeholder='PROJECT DESCRIPTION'></textarea>
+                <input class='required' name='estimated_budget' placeholder='ESTIMATED BUDGET' type='text'>
+                <input class='button white' type='submit' value="SEND">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class='two spacing'></div>
+      </div>
+      <div class='medium-4 columns'>
+        <div class='contact-details'>
+          <h4>Our location:</h4>
+          <p>2029 Becker Dr, Lawrence, KS 66047</p>
+          <h4>Our Phone:</h4>
+          <p>913-787-6412</p>
+          <h4>Our Email:</h4>
+          <p>caliberconsulting@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>

@@ -1,0 +1,86 @@
+- avatar: images/@team/nichols.png
+  name: Evan Nichols
+  position: Co-Founder
+  socials:
+    - link: https://www.linkedin.com/in/etnichols
+      icon: linkedin
+    - link: https://github.com/e-nichols
+      icon: github
+  desc:
+      Evan is a senior SELF Fellow at KU with 2 years of software consulting experience and a background in UI/UX design and web development. Past work experience includes Garmin and the Kansas City startup Passel.
+- avatar: images/@team/isom.png
+  name: Grant Isom
+  position: Co-Founder
+  socials:
+    - link: https://www.linkedin.com/in/grantisom
+      icon: linkedin
+    - link: https://github.com/glisom
+      icon: github
+  desc:
+    Grant is a senior SELF Fellow at KU with 3 years of software consulting experience in the Kansas City area. He has worked directly with two Kansas City startups along with a variety of other freelance software jobs.
+
+- avatar: images/@team/jurden.png
+  name: Cole Jurden
+  position: Developer
+  socials:
+    - link: https://www.linkedin.com/in/cole-jurden-19801534
+      icon: linkedin
+    - link: https://github.com/cjurden
+      icon: github
+  desc:
+      Cole is a senior at the University of Kansas studying Computer Science. Past experience includes the web radio app TuneIn, and other web development projects.
+
+- avatar: images/@team/mendoza.png
+  name: Stefan Mendoza
+  position: Developer
+  socials:
+    - link: https://www.linkedin.com/in/stefanmendoza
+      icon: linkedin
+    - link: https://github.com/stefanmendoza
+      icon: github
+  desc:
+      Coming off a software engineering internship with the Kansas City startup Edge Up Sports, Stefan has a strong background in mobile development and the functional programming languages Haskell and Python.
+
+- avatar: images/@team/eskilson.png
+  name: Alek Eskilson
+  position: Back End Developer
+  socials:
+    - link: https://www.linkedin.com/in/aleksander-eskilson-6b53a46a
+      icon: linkedin
+    - link: https://github.com/bdrillard
+      icon: github
+  desc:
+    Alek is a senior SELF Fellow at KU with a strong background in functional programming languages such as Haskell and Clojure. Past work includes interning with the Cerner Big Data Team and Undergraduate Research at KU.
+
+- avatar: images/@team/benham.png
+  name: Noah Benham
+  position: Developer
+  socials:
+    - link: https://www.linkedin.com/in/noahbenham
+      icon: linkedin
+    - link: https://github.com/noahbenham
+      icon: github
+  desc:
+      Noah holds three years of internship experience with Cerner and Blue Cross And Blue Shield of Kansas City, and is the founder of OnSite Computer help.
+
+- avatar: images/@team/uhl.png
+  name: Chad Uhl
+  position: Developer
+  socials:
+    - link: https://www.linkedin.com/in/chaduhl
+      icon: linkedin
+    - link: https://github.com/chaduhl
+      icon: github
+  desc:
+      Working as the graphic design for the KU Office of Study Abroad, Chad is a talented designer with a passion for UI/UX development and graphic design. He is also actively involved in Undergraduate Research.
+
+- avatar: images/@team/clay.png
+  name: Taylor Clay
+  position: Developer
+  socials:
+    - link: https://www.linkedin.com/in/taylor-clay-28978b80
+      icon: linkedin
+    - link: https://github.com
+      icon: github
+  desc:
+      Taylor is a senior at the University of Kansas studying Computer Science.

@@ -3,7 +3,7 @@ title: Caliber Contracting
 email: calibercontracting2@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
     Caliber Consulting is a web and mobile application consulting company aimed at making your ideas come to life with beautiful and intuitive designs. Our team of developers will work with you to make websites and applications users will come back to again and again.
-baseurl: "caliber-contracting.github.io" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: caliber-contracting
 github_username:  caliber-contracting

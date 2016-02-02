@@ -124,5 +124,4 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 44)
-  jekyll-paginate
   json

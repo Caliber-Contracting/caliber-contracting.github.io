@@ -3,7 +3,7 @@ layout: post
 title:  Bridging the Gap
 date:   2015-04-14 10:58:12
 images:
-excerpt:
+excerpt: >
   Everyone is familiar with the age old “I can’t get a job without experience, but I can’t get experience without a job” paradox that plagues so many undergraduate students in engineering and beyond.
 categories: company
 ---

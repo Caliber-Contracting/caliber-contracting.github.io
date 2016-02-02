@@ -4,10 +4,10 @@
     <title>Caliber Contracting</title>
     <description>Caliber Consulting is a web and mobile application consulting company aimed at making your ideas come to life with beautiful and intuitive designs. Our team of developers will work with you to make websites and applications users will come back to again and again.
 </description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 02 Feb 2016 15:52:29 -0600</pubDate>
-    <lastBuildDate>Tue, 02 Feb 2016 15:52:29 -0600</lastBuildDate>
+    <link>caliber-contracting.github.io/</link>
+    <atom:link href="caliber-contracting.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 02 Feb 2016 16:32:10 -0600</pubDate>
+    <lastBuildDate>Tue, 02 Feb 2016 16:32:10 -0600</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -21,8 +21,8 @@
 &lt;p&gt;-Evan Nichols&lt;/p&gt;
 </description>
         <pubDate>Mon, 04 Jan 2016 02:19:12 -0600</pubDate>
-        <link>/first/post/2016/01/04/welcome-to-Caliber-Consulting.html</link>
-        <guid isPermaLink="true">/first/post/2016/01/04/welcome-to-Caliber-Consulting.html</guid>
+        <link>caliber-contracting.github.io/first/post/2016/01/04/welcome-to-Caliber-Consulting.html</link>
+        <guid isPermaLink="true">caliber-contracting.github.io/first/post/2016/01/04/welcome-to-Caliber-Consulting.html</guid>
         
         
         <category>first</category>
@@ -72,8 +72,8 @@
 &lt;p&gt;-Evan Nichols&lt;/p&gt;
 </description>
         <pubDate>Tue, 14 Apr 2015 05:58:12 -0500</pubDate>
-        <link>/company/2015/04/14/bridging-the-gap.html</link>
-        <guid isPermaLink="true">/company/2015/04/14/bridging-the-gap.html</guid>
+        <link>caliber-contracting.github.io/company/2015/04/14/bridging-the-gap.html</link>
+        <guid isPermaLink="true">caliber-contracting.github.io/company/2015/04/14/bridging-the-gap.html</guid>
         
         
         <category>company</category>

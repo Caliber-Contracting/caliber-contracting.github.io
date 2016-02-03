@@ -6,6 +6,7 @@ images:
 excerpt: >
   Everyone is familiar with the age old “I can’t get a job without experience, but I can’t get experience without a job” paradox that plagues so many undergraduate students in engineering and beyond.
 categories: company
+author: Evan Nichols
 ---
 
 Everyone is familiar with the age old “I can’t get a job without experience, but I can’t get experience without a job” paradox that plagues so many undergraduate students in engineering and beyond. Attending the Engineering Career Fair my freshman year, I recall vividly a recruiter, after scanning over my resume for a few seconds, handing it back and saying, *“I’m sorry but we’re looking for candidates with a little more prior experience.”*

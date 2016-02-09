@@ -24,3 +24,6 @@ analytics :
   provider : google
   google :
       tracking_id : 'UA-73288914-1'
+
+# Adding safe mode to enable Analytics.
+safe: true

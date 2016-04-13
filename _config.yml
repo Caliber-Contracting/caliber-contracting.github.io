@@ -1,29 +1,21 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
 # Site settings
-title: Caliber Contracting
-email: calibercontracting2@gmail.com
+title: Your awesome title
+email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-    Caliber Consulting is a web and mobile application consulting company aimed at making your ideas come to life with beautiful and intuitive designs. Our team of developers will work with you to make websites and applications users will come back to again and again.
-baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: caliber-contracting
-github_username:  caliber-contracting
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-
-gems: [jekyll-paginate]
-paginate: 5
-paginate_path: "blog/page:num"
-
-
-# Settings for analytics helper
-# Set 'provider' to the analytics provider you want to use.
-# Set 'provider' to false to turn analytics off globally.
-#
-analytics :
-  provider : google
-  google :
-      tracking_id : 'UA-73288914-1'
-
-# Adding safe mode to enable Analytics.
-safe: true

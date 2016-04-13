@@ -1,187 +1,23 @@
 ---
 layout: default
-section_id: home
-slides:
-  - bg: images/@stock/slide-1.jpg
-    small_title:
-      klass: bottom-to-top
-      text: Welcome to
-    title:
-      klass: bottom-to-top
-      text: Caliber
-    buttons:
-      klass: bottom-to-top
-      items:
-
-services-right:
-  - icon: laptop
-    title: Web Development
-    desc: A strong web presence is a necessity for every modern business today. We design and create beautiful websites using industry-standard frameworks and cutting-edge open source technologies.
-  - icon: apple
-    title: iOS
-    desc: Using Objective-C or Swift, our iOS applications are built with usability and scalability in mind.
-  - icon: android
-    title: Android
-    desc: We design and develop Android applications with flexibilty and user experience in mind. Your application will look and perform well on every device.
-
-services-left:
-- icon: cogs
-  title: Maintenence/Enhancement
-  desc: Looking to add new features or redesign an existing website or application? We can improve your application's look and feel while also enhancing the underlying functionality.
-- icon: pencil
-  title: Content Management Systems (CMS)
-  desc: Implement a popular Content Management System into your existing website to simplify the creation and posting of all types of media.
-- icon: tasks
-  title: Search Engine Optimization (SEO)
-  desc: Gain a competitive advantage in search results using SEO. We will develop a viable SEO strategy to increase your site's traffic and search engine rank.
-
 ---
 
+<div class="home">
 
-<div class='mod modDefaultSlider'>
-  <div style="height: 400px;" class='sequence' data-autostop='on' data-timeout='0'>
-    <ul class='sequence-pagination'>
-      {% for slide in page.slides %}
-        {% if forloop.first %}
-          {% assign class = 'current' %}
-        {% else %}
-          {% assign class = '' %}
-        {% endif %}
-        <li class="{{class}}"></li>
-      {% endfor %}
-    </ul>
-    <ul class='sequence-canvas'>
-      {% for slide in page.slides %}
-        {% if forloop.first %}
-          {% assign style = 'static' %}
-        {% else %}
-          {% assign style = '' %}
-        {% endif %}
+  <h1 class="page-heading">Posts</h1>
 
-        <li class='frame {{style}} {{ slide.klass }}'>
-          <div class='bg' style='background-image: url({{ slide.bg}});'></div>
-          <div class='small-title {{ slide.small_title.klass }}'>
-            <div class='row'>
-              <div class='large-12 columns'>
-                <h2>{{ slide.small_title.text }}</h2>
-              </div>
-            </div>
-          </div>
-          <div class='title {{ slide.title.klass }}'>
-            <div class='row'>
-              <div class='large-12 columns'>
-                <h2 style="font-family: 'League Spartan';">{{ slide.title.text }}</h2>
-              </div>
-            </div>
-          </div>
-          <div class='buttons-wrapper {{ slide.buttons.klass }}'>
-            <div class='row'>
-              <div class='large-12 columns'>
-                <div class='two spacing'></div>
-                {% for button in slide.buttons.items %}
-                  <a class='button {{ button.klass }}' href='{{ button.link_to }}'>{{ button.text }}</a>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-<div class="spacing"></div>
-
-<div class='full'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Our services" %}
-      <div class='spacing'></div>
-      <p>
-Our core services are web and mobile development. We build and maintain websites and applications using industry best practices, and will work with you one-on-one to bring your ideas to life.</p>
-      <div class='three spacing'></div>
-    </div>
-  </div>
-  <div class='row'>
-    <div class='medium-6 columns'>
-    {% for service in page.services-right %}
-      <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
-        <div class='icon-text-simple'>
-          <i class='fa fa-{{service.icon}}'></i>
-          <h3>{{service.title}}</h3>
-          <p>{{service.desc}}</p>
-        </div>
-        <div class='two spacing'></div>
-      </div>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
     {% endfor %}
-    </div>
-    <div class='medium-6 columns'>
-      {% for service in page.services-left %}
-        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
-          <div class='icon-text-simple'>
-            <i class='fa fa-{{service.icon}}'></i>
-            <h3>{{service.title}}</h3>
-            <p>{{service.desc}}</p>
-          </div>
-          <div class='two spacing'></div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
+  </ul>
 
-<div class='full'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Our team" %}
-      <div class='spacing'></div>
-      <p>
-We're a team of hardworking developers and designers from the Kansas City area with backgrounds in web, iOS and Android development. Our team has software engineering experience with a wide range of companies, from startups like Knoda and TuneIn to established companies like Garmin and Cerner.
-      </p>
-      <div class='two spacing'></div>
-    </div>
-  </div>
-  <div class='row'>
-    {% for member in site.data.members %}
-      <div class='small-6 medium-3 large-3 columns'>
-        <div class='mod modTeamMember'>
-          <div class='member'>
-            <img class="avatar" alt="" src="{{ member.avatar }}" />
-            <div class='overlay'>
-              <div class='intro'>
-                <h3>{{member.name}}</h3>
-                <p>{{member.position}}</p>
-                <ul class='socials'>
-                  {% for social in member.socials %}
-                    <li>
-                      <a href='{{social.link}}'>
-                        <i class='fa fa-{{social.icon}}'></i>
-                      </a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class='two spacing'></div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-</div>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-<div class='full no-padding' style='background: #fff'>
-  <div class='two spacing'></div>
-  <div class='mod modCallToAction'>
-    <div class='row'>
-      <div class='medium-6 large-6 columns'>
-        <p>Interested in working with us? Let's get started.</p>
-      </div>
-          </div>
-      <div class = "row center">
-        <a class='button' href='{{site.url}}/contact.html'>Contact Us</a>
-    </div>
-
-  </div>
-  <div class='spacing'></div>
 </div>

@@ -1,44 +1,27 @@
-<div class='contain-to-grid sticky'>
-  <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
-    <ul class='title-area'>
-      <li class='name'>
-        <h1>
-          <a href='{{site.url}}/index.html'>
-            <img alt="" src="{{site.url}}/images/logo-bordered.png" />
-          </a>
-        </h1>
-      </li>
-      <li class='toggle-topbar menu-icon'>
-        <a href='#'>Menu</a>
-      </li>
-    </ul>
-    <section class='top-bar-section'>
-      <ul class="right">
-        {% for item in site.data.nav %}
-          {% if item.section_id == page.section_id %}
-            {% assign active_class = "active" %}
-          {% else %}
-            {% assign active_class = "" %}
-          {% endif %}
+<header class="site-header">
 
-          {% if item.children %}
-            <li class="has-dropdown {{active_class}}">
-              <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
-              <ul class='dropdown'>
-                {% for child in item.children %}
-                  <li>
-                    <a href="{{site.url}}/{{ child.path }}">{{ child.name }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </li>
-          {% else %}
-            <li class="{{active_class}}">
-              <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
-            </li>
+  <div class="wrapper">
+
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
-      </ul>
-    </section>
-  </nav>
-</div>
+      </div>
+    </nav>
+
+  </div>
+
+</header>

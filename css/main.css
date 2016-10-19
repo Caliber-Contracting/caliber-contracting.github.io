@@ -51,7 +51,7 @@ body {
 }
 
 @@media max-width: 480px {
-  #contact {
+  #contact svg {
     width: 40%;
   }
 }

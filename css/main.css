@@ -47,4 +47,11 @@ body {
   margin: 0 auto;
   left: 0;
   right: 0;
+  margin-bottom: 3%;
+}
+
+@@media max-width: 480px {
+  #contact {
+    width: 40%;
+  }
 }
